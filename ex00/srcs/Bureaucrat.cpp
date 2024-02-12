@@ -6,7 +6,7 @@
 /*   By: ple-stra <ple-stra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 04:37:40 by ple-stra          #+#    #+#             */
-/*   Updated: 2024/01/29 20:59:28 by ple-stra         ###   ########.fr       */
+/*   Updated: 2024/02/12 14:15:27 by ple-stra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,15 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name)
 	else if (grade > 150)
 		throw Bureaucrat::GradeTooLowException();
 	this->_grade = grade;
-	std::cout << this->_name << " as been initiated with a grade of "
+	std::cout << this->_name << " bureaucrat as been initiated with a grade of "
 		<< this->_grade << "." << std::endl;
 }
 
-Bureaucrat::Bureaucrat(Bureaucrat const & src)
+Bureaucrat::Bureaucrat(Bureaucrat const & src) : _name(src.getName())
 {
 	*this = src;
+	std::cout << this->_name << " bureaucrat as been initiated with a grade of "
+		<< this->_grade << "." << std::endl;
 }
 
 Bureaucrat::~Bureaucrat()
