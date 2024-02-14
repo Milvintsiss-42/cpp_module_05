@@ -6,7 +6,7 @@
 /*   By: ple-stra <ple-stra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 17:36:12 by ple-stra          #+#    #+#             */
-/*   Updated: 2024/02/14 18:13:55 by ple-stra         ###   ########.fr       */
+/*   Updated: 2024/02/14 18:17:37 by ple-stra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 int	main(void)
 {
+	std::cout << "Ex00" << std::endl;
 	Bureaucrat lancelot = Bureaucrat("Lancelot", 1);
 	Bureaucrat lancebas = Bureaucrat("Lancebas", 149);
 	try
@@ -61,6 +62,7 @@ int	main(void)
 	}
 	std::cout << lancelot << std::endl;
 
+	std::cout << std::endl << "Ex02" << std::endl;
 	Bureaucrat treeman("Treeman", 130);
 	ShrubberyCreationForm treeForm("42");
 	std::cout << treeForm << std::endl;
@@ -80,6 +82,7 @@ int	main(void)
 	lancelot.signForm(pardonForm);
 	lancelot.executeForm(pardonForm);
 
+	std::cout << std::endl << "Ex03" << std::endl;
 	Intern someRandomIntern;
 	AForm *rrf;
 

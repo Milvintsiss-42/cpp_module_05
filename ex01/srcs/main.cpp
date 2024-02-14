@@ -6,7 +6,7 @@
 /*   By: ple-stra <ple-stra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 17:36:12 by ple-stra          #+#    #+#             */
-/*   Updated: 2024/02/12 14:26:56 by ple-stra         ###   ########.fr       */
+/*   Updated: 2024/02/14 18:18:54 by ple-stra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	main(void)
 {
+	std::cout << "Ex00" << std::endl;
 	Bureaucrat lancelot = Bureaucrat("Lancelot", 1);
 	Bureaucrat lancebas = Bureaucrat("Lancebas", 149);
 	try
@@ -57,6 +58,7 @@ int	main(void)
 	}
 	std::cout << lancelot << std::endl;
 
+	std::cout << std::endl << "Ex01" << std::endl;
 	Form a38 = Form("A38", 1, 3);
 	try
 	{
